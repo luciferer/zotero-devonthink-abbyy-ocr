@@ -1,4 +1,4 @@
-# Publication checklist and release note draft
+# Publication record and remaining acceptance checks
 
 ## Source and provenance
 
@@ -6,7 +6,7 @@ The source was copied from locally installed Zotero ABBYY Review Queue 0.2.2 and
 
 Public-candidate changes: remove the fixed `Codex Data` database name in favor of an explicit config name; refuse permanent deletion through the bridge; constrain both manifests to the Zotero 9.0.x series tested locally; replace nonfunctional update URLs with a repository release plan; provide a disabled-by-default config initializer, public documentation, and deterministic binary/update-manifest build.
 
-## Release note draft
+## v0.3.0 pre-release
 
 **v0.3.0 (candidate)**
 
@@ -16,13 +16,18 @@ Public-candidate changes: remove the fixed `Codex Data` database name in favor o
 - Supports Zotero 9.0.x on macOS. A clean external installation, Zotero 10, and non-macOS systems have not been verified.
 - Uses the ABBYY OCR capability of an independently installed DEVONthink. No OCR engine is bundled.
 
-## Gates before a public release
+## Published and verified
 
-1. MIT licensing and the `luciferer` repository owner have been selected; verify the GitHub release and repository visibly show this before treating the public release as complete.
-2. Run source/secret scanning, repeatable builds, JS/Python tests, and an isolated fresh-install test on a disposable Zotero profile and DEVONthink ordinary database. Do not use a live research library for a release acceptance run.
-3. Create the repository under the verified GitHub account, publish the source, create tag `v0.3.0`, and publish **both** named XPI files under `downloads/v0.3.0/`. The GitHub pre-release page links to those files; the browser's direct Release-asset uploader did not retain assets when publishing.
-4. Fetch the public `updates-*.json` URLs and versioned download files, compare their SHA-256 values, then install the released binaries in the isolated profile.
-5. When Zotero offers an official plugin-directory submission route, follow that route. Its current official documentation says the directory is still planned. A community directory or a Zotero Forums announcement is a separate publication decision.
+- Public source repository: https://github.com/luciferer/zotero-devonthink-abbyy-ocr
+- MIT license, source, build script, tests, update manifests, and documentation are on `main`.
+- The pre-release page links to two versioned XPI files stored under `downloads/v0.3.0/`. The first attempt to attach files directly as GitHub Release assets did not persist them; the built-in Assets section therefore contains only GitHub's source archives. Use the explicit XPI links in the release description or README.
+- Both versioned files were fetched through their public raw GitHub URLs and passed SHA-256 and ZIP/manifest checks against their update JSON entries. The local runtime installed on the owner's Mac remains on the earlier private versions.
+
+## Remaining acceptance checks
+
+1. Repeat installation and one synthetic PDF cycle on a **separate disposable Zotero profile and DEVONthink ordinary database**. Do not use a live research library for a release acceptance run.
+2. Obtain an external security review of the write-capable local bridge before recommending it broadly.
+3. When Zotero offers an official plugin-directory submission route, follow that route. Its current official documentation says the directory is still planned. A community directory or a Zotero Forums announcement is a separate publication decision.
 
 ## Known limitation
 

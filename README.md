@@ -2,7 +2,7 @@
 
 Two independently installable Zotero plugins for a macOS-only, append-only OCR workflow. These are third-party plugins. They are not published or endorsed by Zotero, DEVONtechnologies, or ABBYY. The ABBYY OCR component is supplied by a separately licensed DEVONthink installation; no ABBYY binary is included here.
 
-**Release status:** public-release candidate. The local workflow was tested with Zotero 9.0.6 and DEVONthink 4 on macOS. This repository snapshot has not been tested as a fresh install on another computer. The upstream Zotero plugin directory has no submission route as of October 2026; see [Zotero's plugins page](https://www.zotero.org/support/plugins).
+**Release status:** [v0.3.0 public pre-release](https://github.com/luciferer/zotero-devonthink-abbyy-ocr/releases/tag/v0.3.0). The local workflow was tested with Zotero 9.0.6 and DEVONthink 4 on macOS. A fresh install on another computer has not yet been verified. The upstream Zotero plugin directory has no submission route as of October 2026; see [Zotero's plugins page](https://www.zotero.org/support/plugins).
 
 ## What is included
 
