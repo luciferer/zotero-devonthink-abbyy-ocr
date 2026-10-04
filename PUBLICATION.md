@@ -20,8 +20,8 @@ Public-candidate changes: remove the fixed `Codex Data` database name in favor o
 
 1. MIT licensing and the `luciferer` repository owner have been selected; verify the GitHub release and repository visibly show this before treating the public release as complete.
 2. Run source/secret scanning, repeatable builds, JS/Python tests, and an isolated fresh-install test on a disposable Zotero profile and DEVONthink ordinary database. Do not use a live research library for a release acceptance run.
-3. Create the repository under the verified GitHub account, publish the source, create tag `v0.3.0`, and attach **both** named XPI assets from `dist/`.
-4. Fetch the public `updates-*.json` URLs and release assets, compare their SHA-256 values, then install the released binaries in the isolated profile.
+3. Create the repository under the verified GitHub account, publish the source, create tag `v0.3.0`, and publish **both** named XPI files under `downloads/v0.3.0/`. The GitHub pre-release page links to those files; the browser's direct Release-asset uploader did not retain assets when publishing.
+4. Fetch the public `updates-*.json` URLs and versioned download files, compare their SHA-256 values, then install the released binaries in the isolated profile.
 5. When Zotero offers an official plugin-directory submission route, follow that route. Its current official documentation says the directory is still planned. A community directory or a Zotero Forums announcement is a separate publication decision.
 
 ## Known limitation

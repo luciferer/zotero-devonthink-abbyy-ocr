@@ -42,7 +42,7 @@ python3 -m unittest discover -s zotero-abbyy-review-queue/tests -q
 node --test zotero-abbyy-review-queue/tests/*.js zotero-mcp-local-bridge/tests/*.js
 ```
 
-The build produces deterministic XPIs in `dist/` and update manifests in the repository root. The update manifests point to assets under the `v0.3.0` GitHub release; automatic update links only work after that release and both named XPI assets are published. The packaged compatibility range is limited to Zotero 9.0.x, the version series tested locally.
+The build produces XPIs in `dist/` and update manifests in the repository root. The v0.3.0 binaries are stored in [`downloads/v0.3.0/`](downloads/v0.3.0/) and linked from the GitHub pre-release page. The update manifests point directly to those versioned files and include their SHA-256 values. The packaged compatibility range is limited to Zotero 9.0.x, the version series tested locally.
 
 ## Maintenance
 

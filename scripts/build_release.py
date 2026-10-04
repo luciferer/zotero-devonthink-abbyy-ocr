@@ -42,7 +42,7 @@ def build(verify: bool = False) -> list[dict[str, str]]:
                 addon_id: {
                     "updates": [{
                         "version": version,
-                        "update_link": f"https://github.com/{OWNER_REPO}/releases/download/v0.3.0/{asset}",
+                        "update_link": f"https://raw.githubusercontent.com/{OWNER_REPO}/main/downloads/v0.3.0/{asset}",
                         "update_hash": f"sha256:{digest}",
                         "applications": {"zotero": {"strict_min_version": "9.0", "strict_max_version": "9.0.*"}},
                     }]

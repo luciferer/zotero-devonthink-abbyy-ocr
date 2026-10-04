@@ -4,7 +4,7 @@
       "updates": [
         {
           "version": "0.3.0",
-          "update_link": "https://github.com/luciferer/zotero-devonthink-abbyy-ocr/releases/download/v0.3.0/zotero-abbyy-review-queue-0.3.0.xpi",
+          "update_link": "https://raw.githubusercontent.com/luciferer/zotero-devonthink-abbyy-ocr/main/downloads/v0.3.0/zotero-abbyy-review-queue-0.3.0.xpi",
           "update_hash": "sha256:f29c913e6820420a3c2fa2190588289906f92892f427f9337e742e3931d1d24c",
           "applications": {
             "zotero": {
