@@ -1,0 +1,19 @@
+{
+  "addons": {
+    "zotero-mcp-local-bridge@codex.local": {
+      "updates": [
+        {
+          "version": "0.3.0",
+          "update_link": "https://github.com/luciferer/zotero-devonthink-abbyy-ocr/releases/download/v0.3.0/zotero-mcp-local-bridge-0.3.0.xpi",
+          "update_hash": "sha256:680f067daa48f0e263cab6b2366ff071af9403268683ee9c813803842dcbfe62",
+          "applications": {
+            "zotero": {
+              "strict_min_version": "9.0",
+              "strict_max_version": "9.0.*"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

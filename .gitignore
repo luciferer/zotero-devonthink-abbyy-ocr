@@ -1,0 +1,14 @@
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+config.json
+queue/
+auto-pending.json
+auto-log.jsonl
+auto-status.json
+ui-requests/
+acceptance/
+*.dtBase2/
+*.dtSparse/
+*.dtArchive/
